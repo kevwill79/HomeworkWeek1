@@ -3,7 +3,7 @@ public class BurgerTownMenu
 {
 	public static void main(String[] args)
 	{
-		//Turkey burger
+		//Turkey burger with 4 condiments
 		Burger turkeyBurger = new TurkeyBurger();
 		turkeyBurger = new Lettuce(turkeyBurger);
 		turkeyBurger = new Tomatoes(turkeyBurger);
@@ -13,7 +13,7 @@ public class BurgerTownMenu
 		System.out.println(turkeyBurger.getIngredients() 
 				+ "  COST: $" + turkeyBurger.cost());
 		
-		//Regular hamburger
+		//Regular hamburger with all 8 condiments
 		Burger hamburger = new Hamburger();
 		hamburger = new Lettuce(hamburger);
 		hamburger = new Onions(hamburger);
@@ -27,7 +27,7 @@ public class BurgerTownMenu
 		System.out.println(hamburger.getIngredients()
 				+ "  COST: $" + hamburger.cost());
 		
-		//Steak burger
+		//Steak burger with 2 condiments
 		Burger steakBurger = new SteakBurger();
 		steakBurger = new Tomatoes(steakBurger);
 		steakBurger = new Lettuce(steakBurger);
@@ -35,7 +35,7 @@ public class BurgerTownMenu
 		System.out.println(steakBurger.getIngredients()
 				+ "  COST: $" + steakBurger.cost());
 		
-		//Veggie burger
+		//Veggie burger with no condiments
 		Burger veggieBurger = new VeggieBurger();
 		
 		System.out.println(veggieBurger.getIngredients() 
