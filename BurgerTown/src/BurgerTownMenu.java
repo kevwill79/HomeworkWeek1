@@ -24,8 +24,8 @@ public class BurgerTownMenu
 		hamburger = new Pickles(hamburger);
 		hamburger = new Bacon(hamburger);
 		
-		System.out.println(hamburger.getIngredients()
-				+ "  COST: $" + hamburger.cost());
+		System.out.printf(hamburger.getIngredients()
+				+ "  COST: $" + "%.2f\n", hamburger.cost());
 		
 		//Steak burger with 2 condiments
 		Burger steakBurger = new SteakBurger();
