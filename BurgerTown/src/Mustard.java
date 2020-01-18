@@ -15,6 +15,6 @@ public class Mustard extends CondimentDecorator
 	
 	public double cost()
 	{
-		return burger.cost() + 0.0;
+		return burger.cost() + 0.05;
 	}
 }
